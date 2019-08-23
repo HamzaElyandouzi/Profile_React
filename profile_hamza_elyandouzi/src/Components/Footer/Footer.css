@@ -1,0 +1,28 @@
+.footer{
+    padding: 2% 1% 0 1%;
+}
+
+.footer footer{
+    display: flex;
+    margin: 0 0 -2% 0;
+    color: #e8e8e8;
+    text-shadow: 2px 2px 2px #191919, 1px 1px 1px #616161;
+    font-family: "Times New Roman", sans-serif ;
+}
+
+.footer a{
+    color: #e8e8e8;
+    text-shadow: 2px 2px 2px #191919, 1px 1px 1px #616161;
+    font-family: "Times New Roman", sans-serif ;;
+}
+
+.footer a:hover{
+    color: rgba(255, 255, 255, 0.86);
+    text-shadow: 2px 2px 2px rgba(38, 38, 38, 0.98), 1px 1px 1px rgba(216, 216, 216, 0.91);
+    font-family: "Times New Roman", sans-serif ;;
+}
+
+.hr{
+    border: 1px solid rgba(158, 158, 158, 0.61);
+    margin: 1px 0;
+}

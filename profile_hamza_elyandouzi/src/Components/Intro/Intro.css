@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.introPage{
+    display: inline-block;
+    margin-bottom: inherit;
+}
+
+
+
+.introPage h1{
+    margin-bottom: 3px;
+    font-size: 4em;
+    font-family: "Times New Roman", sans-serif ;
+}
+
+.introPage p{
+    margin-bottom: 3px;
+    font-size: 3em;
+    font-family: "Times New Roman", sans-serif ;
+}
+
+.introPage button{
+    color: white;
+    background-color: rgb(8, 8, 8);
+    border-radius: 15px;
+    border: 3px solid #141414;
+    box-shadow: 1px 2px 2px #191919, 1px 1px 1px rgba(224, 224, 224, 0.85);
+    font-family: "Times New Roman", sans-serif ;
+    font-size: 3em;
+    padding: 0.5em 1.2em;
+    margin-top: 10px;
+}
+
+.introPage button:hover{
+    text-decoration: underline;
+    background-color: rgba(5, 5, 5, 0.98);
+}
