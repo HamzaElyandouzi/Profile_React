@@ -5,20 +5,19 @@
 .footer footer{
     display: flex;
     margin: 0 0 -2% 0;
-    color: #e8e8e8;
-    text-shadow: 2px 2px 2px #191919, 1px 1px 1px #616161;
-    font-family: "Times New Roman", sans-serif ;
+    color: black;
+    text-shadow: 1px 0 1px white, 1px 0 1px black, 0 1px 1px black;
 }
 
 .footer a{
-    color: #e8e8e8;
-    text-shadow: 2px 2px 2px #191919, 1px 1px 1px #616161;
+    color: black;
+    text-shadow: 1px 1px 0 white, 1px 1px 1px black;
     font-family: "Times New Roman", sans-serif ;;
 }
 
 .footer a:hover{
-    color: rgba(255, 255, 255, 0.86);
-    text-shadow: 2px 2px 2px rgba(38, 38, 38, 0.98), 1px 1px 1px rgba(216, 216, 216, 0.91);
+    color: blue;
+    text-shadow: 1px 1px 1px white, 1px 1px 1px black;
     font-family: "Times New Roman", sans-serif ;;
 }
 

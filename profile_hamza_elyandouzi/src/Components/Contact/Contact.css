@@ -2,19 +2,11 @@ body{
     padding: 0;
     margin: 0;
 }
+
 .contact{
     display: grid;
     grid-template-columns: 1fr repeat(2, 175px) 1fr;
-}
-
-.contact form h3{
-    grid-column: 2/2 span;
-    justify-content: center;
-    padding: 1px 0 5px;
-    font-size: 30px;
-    text-align: center;
-    color: rgba(3, 3, 3, 0.92);
-    text-shadow: 1px 1px 1px rgba(190, 190, 190, 0.89), 1px 1px 1px rgba(29, 29, 29, 0.83);
+    padding: 2.5% 0 1%;
 }
 
 .contact form{
@@ -24,7 +16,33 @@ body{
     border-radius: 5em;
     box-shadow: 1px 1px 0 #131313, 1px 1px 1px rgba(224, 224, 224, 0.85);
     padding: 5% 0 1% 0;
-    background-color: rgba(246, 246, 246, 0.69);
+    margin: 5% 0 2%;
+    background-color: rgba(246, 246, 246, 0.85);
+}
+
+.contact form h3{
+    grid-column: 2/2 span;
+    justify-content: center;
+    padding: 1px 0 5px;
+    font-size: 30px;
+    text-align: center;
+    color: rgba(3, 3, 3, 0.92);
+    text-shadow: 1px 1px 1px white, 1px 1px 1px black;
+}
+
+.gender h4{
+    margin: 1px;
+    font-size: 10px;
+    padding: 5% 0 0;
+    color: black;
+    text-shadow: 1px 1px 1px white, 1px 1px 1px black;
+}
+
+.contact label h4{
+    margin: 1px;
+    font-size: 19px;
+    color: black;
+    text-shadow: 1px 1px 1px white, 1px 1px 1px black;
 }
 
 .contact input[type=text]{
@@ -43,34 +61,13 @@ body{
     padding: 2% 1% 1%;
     box-sizing: content-box;
     border: 1px solid black;
-    box-shadow: 1px 1px 0 rgba(41, 41, 41, 0.67), 1px 1px 1px rgba(224, 224, 224, 0.85);
-}
-
-.gender h4{
-    margin: 1px;
-    font-size: 10px;
-    padding: 5% 0 0;
-    color: black;
-    text-shadow: 2px 2px 2px white, 1px 1px 1px #616161;
+    box-shadow: 1px 1px 0 rgba(41, 41, 41, 0.85), 1px 1px 1px rgba(224, 224, 224, 0.85);
 }
 
 .contact input[type=radio]{
     margin: 3% 1%;
     box-sizing: content-box;
     box-shadow: 1px 1px 0 rgba(41, 41, 41, 0.67), 1px 1px 1px rgba(224, 224, 224, 0.85);
-}
-
-.contact textarea{
-    margin: 0 10%;
-    border: 1px solid black;
-    box-shadow: 1px 1px 0 rgba(22, 42, 60, 0.62), 1px 1px 1px rgba(224, 224, 224, 0.75);
-}
-
-.contact label h4{
-    margin: 1px;
-    font-size: 19px;
-    color: black;
-    text-shadow: 1px 1px 3px white, 1px 1px 2px black;
 }
 
 .contact input[type=submit]{
@@ -81,4 +78,10 @@ body{
     border-radius: 2em;
     color: white;
     background-color: rgba(7, 7, 7, 0.98);
+}
+
+.contact textarea{
+    margin: 0 10%;
+    border: 1px solid black;
+    box-shadow: 1px 1px 0 rgba(22, 42, 60, 0.62), 1px 1px 1px rgba(224, 224, 224, 0.75);
 }

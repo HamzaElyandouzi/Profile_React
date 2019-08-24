@@ -1,6 +1,5 @@
 import React from "react";
 import './Contact.css';
-import MainPage from "../../Resources/MainPage.jpg";
 
 class Contact extends React.Component{
     render(){

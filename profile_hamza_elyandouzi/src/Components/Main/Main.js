@@ -1,4 +1,5 @@
 import React from "react";
+import './Main.css'
 import MainPage from '../../Resources/mainBack.jpg';
 import Description from '../Description/Description';
 import Header from "../Header/Header";
@@ -26,34 +27,38 @@ class Main extends React.Component{
         this.setState({display: true});
     };
 
-    render(){
+    changes(){
         if (this.state.display === true){
             return (
-                <div className="mainWrapper" style={{backgroundImage: `url(${MainPage})` }}>
-                    <div className="contain">
-                        <Header/>
-                        <Description/>
-                        <Image/>
-                        <NavBar contact={this.handleContact} home={this.handleHome}/>
-                        <Footer click={this.handleContact}/>
-                    </div>
+                <div>
+                    <Description/>
+                    <Image/>
+                    <NavBar contact={this.handleContact} home={this.handleHome}/>
                 </div>
-            );
-        }else{
+            )
+        }else {
             return (
-                <div className="mainWrapper" style={{backgroundImage: `url(${MainPage})`}}>
-                    <div className="contain">
-                        <Header/>
-                        <div className="imageDiv">
-                            <Image/>
-                        </div>
-                        <NavBar contact={this.handleContact} home={this.handleHome}/>
-                        <Contact/>
-                        <Footer click={this.handleContact}/>
+                <div>
+                    <div className="imageDiv">
+                        <Image/>
                     </div>
+                    <NavBar contact={this.handleContact} home={this.handleHome} CV={this.handleCV}/>
+                    <Contact/>
                 </div>
-            );
+            )
         }
+    }
+
+    render(){
+        return (
+            <div className="mainWrapper" style={{backgroundImage: `url(${MainPage})` }}>
+                <div className="contain">
+                    <Header/>
+                    {this.changes()}
+                    <Footer/>
+                </div>
+            </div>
+        );
     }
 }
 

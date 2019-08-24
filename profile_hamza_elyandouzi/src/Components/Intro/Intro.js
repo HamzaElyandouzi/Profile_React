@@ -1,7 +1,5 @@
 import React from "react";
 import "./Intro.css";
-import "../Main/Main.css";
-import IntroPage from "../../Resources/intro.jpg";
 import Main from "../Main/Main";
 
 class Intro extends React.Component{
@@ -14,7 +12,6 @@ class Intro extends React.Component{
     }
 
     handleClick() {
-        document.body.style.backgroundImage = `url(${IntroPage})`;
         this.setState({display: false});
     };
 

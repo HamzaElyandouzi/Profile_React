@@ -4,24 +4,44 @@
 
 .navBar ul{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1% 1%;
 }
 
 .navBar li{
     flex: 1 0 auto;
     text-align: center;
     list-style-type: none;
+    margin-top: 1%;
+    padding: 0 1%;
 }
 
 .navBar a{
     font-size: 2em;
-    color: #cecece;
+    color: black;
     text-decoration: none;
-    text-shadow: 2px 2px 2px #191919, 1px 1px 1px #616161;
-    border: 5px solid #cccccc;
+    text-shadow: 1px 1px 1px white, 1px 1px 1px black;
+    border: 3px solid black;
     border-radius: 9em;
-    box-shadow: 1px 2px 2px #191919, 1px 1px 1px rgba(224, 224, 224, 0.85);
-    padding: 0.5% 1.5%;
+    box-shadow: 0 0 0 white, 1px 1px 1px black;
+    background-color: rgba(255, 255, 255, 0.90);
+    padding: 0.6% 4% 1%;
+}
+
+.navBar img{
+    width: 26px;
+    height: 28px;
+    margin: -3px 5px -6px 5px;
+    padding: -2px 2px;
+}
+
+.navBar a:hover{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.55);
+    text-shadow: 2px 2px 2px black ;
+    text-decoration: underline white;
+    border: 2px solid white;
+    padding: 0.8% 5% 2%;
 }
 
 .tags1{
@@ -30,13 +50,11 @@
 }
 
 .tags2{
-    grid-column: 2;
+    grid-column: 2 span;
     justify-content: center;
 }
 
-.navBar a:hover{
-    color: rgba(249, 249, 249, 0.9);
-    text-shadow: 2px 2px 2px black ;
-    text-decoration: underline #f3f3f3;
-    border: 5px solid #f3f3f3;
+.tags3{
+    grid-column: 3;
+    justify-content: center;
 }

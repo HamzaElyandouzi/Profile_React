@@ -3,14 +3,6 @@ import Profile from '../../Resources/Profile.png'
 import "./Header.css"
 
 class Header extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state={
-
-        }
-
-    }
-
     render(){
         return (
             <div className="profile" >
