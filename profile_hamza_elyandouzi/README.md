@@ -1,3 +1,7 @@
+start with index.js and then go down from there
+
+read the lower text to let the code work.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
