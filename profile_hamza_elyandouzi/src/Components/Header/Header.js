@@ -2,6 +2,8 @@ import React from "react";
 import Profile from '../../Resources/Profile.png'
 import "./Header.css"
 
+//this component contains the header of the page witch will render by any click og the button
+//the image uses a reference to a import to my picture
 class Header extends React.Component{
     render(){
         return (

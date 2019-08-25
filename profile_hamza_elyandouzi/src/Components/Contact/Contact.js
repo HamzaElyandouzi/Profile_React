@@ -1,6 +1,8 @@
 import React from "react";
 import './Contact.css';
 
+
+//the basic layout of a form model in html
 class Contact extends React.Component{
     render(){
         return(

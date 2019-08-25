@@ -1,60 +1,24 @@
 import React from "react";
-import './Main.css'
 import MainPage from '../../Resources/mainBack.jpg';
-import Description from '../Description/Description';
 import Header from "../Header/Header";
-import NavBar from "../NavBar/NavBar";
-import Contact from "../Contact/Contact";
-import Image from "../Images/Images";
 import Footer from "../Footer/Footer";
+import SwitchingComponents from "../../Function/SwitchingComponents/switchingComponents";
+import './Main.css'
 
+//the following Component is pretty simple
+//it just renders the imported Components to the second page
 class Main extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-            display: true
-        };
-
-        this.handleContact = this.handleContact.bind(this);
-        this.handleHome = this.handleHome.bind(this);
-    }
-
-    handleContact() {
-        this.setState({display: false});
-    };
-
-    handleHome() {
-        this.setState({display: true});
-    };
-
-    changes(){
-        if (this.state.display === true){
-            return (
-                <div>
-                    <Description/>
-                    <Image/>
-                    <NavBar contact={this.handleContact} home={this.handleHome}/>
-                </div>
-            )
-        }else {
-            return (
-                <div>
-                    <div className="imageDiv">
-                        <Image/>
-                    </div>
-                    <NavBar contact={this.handleContact} home={this.handleHome} CV={this.handleCV}/>
-                    <Contact/>
-                </div>
-            )
-        }
-    }
-
     render(){
         return (
+            //to use inline styles you have to use double curly brackets and then either the link or the reference to in this case the background
+            // in with '' so React can recognize it as css code
             <div className="mainWrapper" style={{backgroundImage: `url(${MainPage})` }}>
+                {/*if need to use javascript or a component in a string place theme in backtick` ` followed by a dollar sign and curly brakets
+                like so `url(${Javascript code or reference's to imports})` this will count as a string and is used if you need to use a
+                reference in yours code as a string */}
                 <div className="contain">
                     <Header/>
-                    {this.changes()}
+                    <SwitchingComponents />
                     <Footer/>
                 </div>
             </div>
